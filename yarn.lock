@@ -378,7 +378,28 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
-"@iconify/types@^2.0.0":
+"@iconify-json/fa6-brands@^1.1.10":
+  version "1.1.10"
+  resolved "https://registry.yarnpkg.com/@iconify-json/fa6-brands/-/fa6-brands-1.1.10.tgz#644bddd0e5bed8c570f7c74fe9ed8e1383f45cd7"
+  integrity sha512-vFjv7kPks7YfT6qtQWMTtMb4jSo/tvj18AklcsYGCW+1eRjuiiluVwLDDqrrKA+Xx0L5TsCEHckp79BC5FCq2g==
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify-json/heroicons@^1.1.9":
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/@iconify-json/heroicons/-/heroicons-1.1.9.tgz#51621892f56de23767004b5fc4dfd12cd557417a"
+  integrity sha512-pDYg74VvhWTMbq+Hrvm0XhmyxGBr2XrQtSjpoWht/vNfHnlQRHP8Z+lPAGMQXYimb3+IaiHwJ5eeEED7KBNIJg==
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify-json/mdi@^1.1.47":
+  version "1.1.47"
+  resolved "https://registry.yarnpkg.com/@iconify-json/mdi/-/mdi-1.1.47.tgz#f2e483b2c900b31d6c9e2f2c1a8e6b4400c56e00"
+  integrity sha512-5E5mazdQaMNl3gmLL7whteh61weJBRfW2R9Rq0/pgAe9B0j22mViyADm/ooHZx07Vkc0ZqnkgUrpT6OsS9Qhzg==
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify/types@*", "@iconify/types@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@iconify/types/-/types-2.0.0.tgz#ab0e9ea681d6c8a1214f30cd741fe3a20cc57f57"
   integrity sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==
@@ -927,6 +948,11 @@ chalk@^4.0.0:
   optionalDependencies:
     fsevents "~2.3.2"
 
+class-variance-authority@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/class-variance-authority/-/class-variance-authority-0.4.0.tgz#2ff1b5a836a68ce7a2dac0cc12f6fdc50e47f666"
+  integrity sha512-74enNN8O9ZNieycac/y8FxqgyzZhZbxmCitAtAeUrLPlxjSd5zA7LfpprmxEcOmQBnaGs5hYhiSGnJ0mqrtBLQ==
+
 clean-stack@^2.0.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/clean-stack/-/clean-stack-2.2.0.tgz#ee8472dbb129e727b31e8a10a427dee9dfe4008b"
@@ -954,6 +980,11 @@ cli-truncate@^3.1.0:
   dependencies:
     slice-ansi "^5.0.0"
     string-width "^5.0.0"
+
+clsx@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/clsx/-/clsx-1.2.1.tgz#0ddc4a20a549b59c93a4116bb26f5294ca17dc12"
+  integrity sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==
 
 color-convert@^1.9.0:
   version "1.9.3"
