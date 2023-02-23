@@ -8,8 +8,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        Cardo: 'Cardo',
+        NotoSans: 'Noto Sans'
+      },
       colors: {
-        theme: { 100: '#171717' }
+        theme: { 100: '#010301' }
       }
     }
   },

@@ -1,27 +1,26 @@
+import { useMounted } from '@/hooks/useMounted'
 import { clsx as cx } from 'clsx'
-import { useState } from 'react'
 
-const socialMediaLink = [
-  { name: 'website', href: '' },
-  { name: 'instagram', href: '' },
-  { name: 'opensea', href: '' },
-  { name: 'twitter', href: '' }
-]
 
 const Home = () => {
-  const [isShow, setIsShow] = useState(false)
-  const onTrigger = () => setIsShow((isShow) => !isShow)
+  const { isDiffPath } = useMounted()
 
   return (
-    <section className="flex justify-center items-center w-full h-full">
-      <div className="py-20">
-        <button
-          onClick={onTrigger}
-          className="w-20 h-20 bg-gray-500 rounded-sm"
-        ></button>
-
-        <div className={cx(isShow ? 'h-72' : 'h-0 opacity-0', )}>
-
+    <section className="relative w-full h-full">
+      <div className="absolute bottom-0 w-full">
+        <div
+          className={cx(
+            isDiffPath ? '' : 'opacity-0',
+            'duration-[1200ms] delay-75 ease-in-out text-lg tracking-wider'
+          )}
+        >
+          <p>Sense and Sensibility</p>
+          <div
+            className={cx(
+              'transition-all duration-1000 ease-in-out delay-75 dark:bg-gray-50 h-[1px] bg-theme-100',
+              isDiffPath ? 'w-1/3 ' : 'w-0'
+            )}
+          ></div>
         </div>
       </div>
     </section>
