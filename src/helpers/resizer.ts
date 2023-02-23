@@ -12,7 +12,6 @@ const resizeCanvas = (
   if (canvas !== null) {
     canvas.width = size + dpi
     canvas.height = size + dpi
-
     canvas.style.width = `${size}px`
     canvas.style.height = `${size}px`
   }

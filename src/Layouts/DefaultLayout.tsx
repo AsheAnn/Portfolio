@@ -11,11 +11,11 @@ const DefaultLayout = () => {
     <div className="relative w-full h-screen bg-gray-50 transition-colors duration-300 ease-linear dark:text-gray-200 text-theme-100 dark:bg-theme-100">
       <IntroAnimaton />
       <Background />
-      <div className="flex relative justify-between p-14 w-full h-full z-[1]">
-        <div className="w-2/3">
+      <div className="relative w-full h-full z-[1]">
+        <div className="absolute w-full h-full p-14">
           <Outlet />
         </div>
-        <div className="w-1/3">
+        <div className="absolute w-full h-full p-14">
           <Navbar />
         </div>
       </div>

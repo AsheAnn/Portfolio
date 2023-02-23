@@ -4,19 +4,21 @@ import DefaultLayout from './layouts/DefaultLayout'
 import Home from './pages/Home'
 import About from './pages/About'
 import Projects from './pages/Projects'
-
+import LoadingProvider from './contexts/LoadingContext'
 
 function App() {
   return (
     <BrowserRouter>
       <ThemeProvider>
-        <Routes>
-          <Route element={<DefaultLayout />}>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/works" element={<Projects />} />
-          </Route>
-        </Routes>
+        <LoadingProvider>
+          <Routes>
+            <Route element={<DefaultLayout />}>
+              <Route index element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/works" element={<Projects />} />
+            </Route>
+          </Routes>
+        </LoadingProvider>
       </ThemeProvider>
     </BrowserRouter>
   )

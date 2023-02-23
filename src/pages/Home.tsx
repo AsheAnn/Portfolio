@@ -11,13 +11,17 @@ const Home = () => {
         <div
           className={cx(
             isDiffPath ? '' : 'opacity-0',
-            'duration-[1200ms] delay-75 ease-in-out text-lg tracking-wider'
+            'duration-[1200ms] delay-75 ease-in-out text-xl tracking-wider'
           )}
         >
-          <p>Sense and Sensibility</p>
+        
+          <div className="inline-flex justify-between w-1/3">
+            <p className="font-NotoSans font-light">Sense and Sensibility</p>
+            <p> © 2023</p>
+          </div>
           <div
             className={cx(
-              'transition-all duration-1000 ease-in-out delay-75 dark:bg-gray-50 h-[1px] bg-theme-100',
+              'mt-4 transition-all duration-1000 ease-in-out delay-75 dark:bg-gray-50 h-[1px] bg-theme-100',
               isDiffPath ? 'w-1/3 ' : 'w-0'
             )}
           ></div>

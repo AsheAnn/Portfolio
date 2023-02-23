@@ -1,9 +1,9 @@
 import ThemeSwitcher from '@/components/ThemeSwitcher'
 import { Link, useLocation } from 'react-router-dom'
-import { socialMediaLink, routerLink } from '@/libs/metadata'
+import { metadata } from '@/libs/metadata'
 
 const Navbar = () => {
-  const location = useLocation()
+  const location = useLocation() 
 
   return (
     <section className="relative z-10 w-full h-full">
@@ -17,7 +17,7 @@ const Navbar = () => {
             </p>
           </div>
           <div className="flex flex-col gap-6 items-end">
-            {routerLink.map((link) => {
+            {metadata.routerLink.map((link) => {
               const isCurrentPath = location.pathname === link.href
               return (
                 <Link to={link.href} key={link.title}>
@@ -42,20 +42,6 @@ const Navbar = () => {
               )
             })}
           </div>
-        </div>
-        <div className="inline-flex gap-5 text-2xl">
-          {socialMediaLink.map((link) => {
-            return (
-              <a
-                href={link.href}
-                key={link.name}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className={link.icon}></div>
-              </a>
-            )
-          })}
         </div>
       </div>
     </section>

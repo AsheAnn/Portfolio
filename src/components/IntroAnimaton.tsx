@@ -1,19 +1,19 @@
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
+
 import { clsx as cx } from 'clsx'
+import { LoadingContext } from '@/contexts/LoadingContext'
 
 const IntroAnimaton = () => {
-  const [isMounted, setIsMounted] = useState(false)
+  const { isMounted, setIsMounted } = useContext(LoadingContext)
   const [isAnimating, setIsAnimating] = useState(false)
 
   useEffect(() => {
-    setIsMounted(true)
-
     setTimeout(() => {
       setIsMounted(false)
     }, 3400)
 
-    return () => setIsMounted(false)
-  }, [])
+    return () => setIsMounted(true)
+  }, [setIsMounted])
 
   useEffect(() => {
     if (isMounted && !isAnimating) {
