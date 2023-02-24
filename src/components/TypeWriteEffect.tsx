@@ -47,29 +47,37 @@ const TypeWriteEffect: React.FC<TypeWriteEffectProps> = ({
   return (
     <>
       {isTyped ? (
-        <div className="inline-flex gap-3 items-center w-full h-10 tracking-[0.08rem]">
-          <div>{text}</div>
-          <div
-            className={cx(
-              'w-2 h-4 dark:bg-gray-50 ease-linear duration-100',
-              showCursor ? '' : 'opacity-0'
-            )}
-          />
+        <div className="inline-flex gap-3 items-center w-full h-14 md:h-10 tracking-[0.08rem]">
+          <div>
+            {text}
+            <span
+              className={cx(
+                'dark:text-gray-50 ease-linear duration-100',
+                showCursor ? '' : 'opacity-0'
+              )}
+            >
+              ❚
+            </span>
+          </div>
         </div>
       ) : (
         <div
           className={cx(
-            isShow ? 'h-10' : 'text-opacity-0 h-0 text-[9px]',
+            isShow ? 'h-14 md:h-10' : 'text-opacity-0 h-0 text-[9px]',
             'transition-all duration-300 ease-in-out inline-flex gap-3 items-center w-full tracking-[0.08rem]'
           )}
         >
-          <div>{displayText}</div>
-          <div
-            className={cx(
-              'w-2 h-4 dark:bg-gray-50 ease-linear duration-100',
-              showCursor ? '' : 'opacity-0'
-            )}
-          />
+          <div>
+            {displayText}
+            <span
+              className={cx(
+                'dark:text-gray-50 ease-linear duration-100 pl-1',
+                showCursor ? '' : 'opacity-0'
+              )}
+            >
+              ❚
+            </span>
+          </div>
         </div>
       )}
     </>

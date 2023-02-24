@@ -8,7 +8,7 @@ const works = [
   { title: "WeiBird's Virtual Concert", role: '', href: '', year: '2020' },
   { title: 'AUO Trailer', role: '', href: '', year: '2021' },
   { title: 'Absurd Arboretum', role: 'Shader / 3D Model / Comp / VFX', href: 'https://ab-ar.art/', year: '2021' },
-  { title: 'Wasted Wild', role: '3D Model / 3D Animator / Comp / VFX', href: 'https://www.wastedwild.life/', year: '2022' }
+  { title: 'Wasted Wild', role: '3D Model / 3D Animator / Comp / VFX', href: 'https://www.wastedwild.life/', year: '2022' },
 ]
 
 const intro = [

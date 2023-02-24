@@ -52,7 +52,7 @@ float fbm ( in vec2 _st) {
 #define M_PI 3.14159265358979323846
 
 void main() {
-    vec2 st = gl_FragCoord.xy/ vec2(2560.0, 960.0) * M_PI * 2.65;
+    vec2 st = gl_FragCoord.xy/ u_resolution.xy * 7.0;
     // st += st * abs(sin(u_time*0.1)*3.0);
     vec3 color = vec3(0.2,0.1,0.4);
 

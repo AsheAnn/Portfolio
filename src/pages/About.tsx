@@ -35,7 +35,7 @@ const TypeWriteSentence: React.FC<{
   return (
     <div
       className={cx(
-        'grid w-full text-sm leading-9 transition-all duration-150 ease-in-out',
+        'grid w-full h-full text-xs md:text-sm md:leading-9 transition-all duration-150 ease-in-out',
         gridMapper[sentenceId.toString()]
       )}
     >
@@ -60,25 +60,27 @@ const About = () => {
 
   return (
     <section className="relative w-full h-full">
-      <div className="absolute bottom-0 w-full flex justify-between">
+      <div className="absolute bottom-5 md:bottom-0 left-0 w-full h-full block md:flex md:justify-between md:items-end gap-3">
         <div
           className={cx(
             isDiffPath ? '' : 'opacity-0',
-            'duration-[1200ms] delay-75 ease-in-out tracking-wider'
+            'pb-2 md:pb-0 duration-[1200ms] delay-75 ease-in-out tracking-wider w-full h-full flex items-end'
           )}
         >
-          <TypeWriteSentence isMounted={isMounted} data={metadata.intro} />
-          <div
-            className={cx(
-              'transition-all duration-1000 ease-in-out delay-75 dark:bg-gray-50 h-[1px] bg-theme-100 mt-4',
-              isDiffPath ? 'w-full' : 'w-0'
-            )}
-          />
+          <div className="w-[81%]">
+            <TypeWriteSentence isMounted={isMounted} data={metadata.intro} />
+            <div
+              className={cx(
+                'transition-all duration-1000 ease-in-out delay-75 dark:bg-gray-50 h-[1px] bg-theme-100 mt-2 md:mt-4',
+                isDiffPath ? 'w-full' : 'w-0'
+              )}
+            />
+          </div>
         </div>
         <div
           className={cx(
             isDiffPath ? '' : ' opacity-0',
-            'duration-[1200ms] delay-75 ease-in-out tracking-wider text-2xl inline-flex items-end gap-5 relative z-30'
+            'duration-[1200ms] delay-75 ease-in-out tracking-wider text-xl md:text-2xl inline-flex items-end gap-3 md:gap-5 relative z-30'
           )}
         >
           <SocialLinkList />

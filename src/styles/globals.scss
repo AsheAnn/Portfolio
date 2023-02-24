@@ -10,6 +10,16 @@
   }
 }
 
+.keep-scrolling {
+  scroll-behavior: smooth;
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 body {
-  @apply overscroll-none; 
+  @apply overscroll-none;
 }
