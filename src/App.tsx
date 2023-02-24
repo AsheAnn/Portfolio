@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom'
 import ThemeProvider from './contexts/ThemeContext'
 import DefaultLayout from './layouts/DefaultLayout'
 import Home from './pages/Home'
@@ -16,6 +16,7 @@ function App() {
               <Route index element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/works" element={<Projects />} />
+              <Route path="*" element={<Navigate to="/" replace />} />
             </Route>
           </Routes>
         </LoadingProvider>
