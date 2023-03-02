@@ -20,7 +20,7 @@ const Projects = () => {
               <SocialLink
                 href={work.href}
                 isTarget={true}
-                className="relative z-30 "
+                className="relative z-40"
               >
                 <p className="italic md:text-7xl font-Cardo">{work.title}</p>
               </SocialLink>
