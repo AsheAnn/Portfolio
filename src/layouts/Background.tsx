@@ -1,6 +1,6 @@
 import { LoadingContext } from '@/contexts/LoadingContext'
 import noise from '@/glsl/noise.glsl'
-import simpleNoise from '@/glsl/simpleNoice.glsl'
+import simpleNoise from '@/glsl/simpleNoise.glsl'
 import resizeCanvas from '@/helpers/resizer'
 import GlslCanvas from 'glslCanvas'
 import { useContext, useEffect, useRef, useState } from 'react'
