@@ -7,22 +7,22 @@ const Projects = () => {
   const { isDiffPath } = useMounted()
 
   return (
-    <section className="relative w-[58%] h-full max-w-6xl">
+    <section className="relative w-full lg:w-[58%] h-full max-w-6xl">
       <div
         className={cx(
           isDiffPath ? '' : 'opacity-0',
-          'duration-[1200ms] delay-75 ease-in-out text-lg tracking-wider w-full gap-9 h-full overflow-y-auto keep-scrolling flex flex-col-reverse'
+          'duration-[1200ms] delay-75 ease-in-out text-lg tracking-wider w-full gap-3 md:gap-9 h-full overflow-y-auto keep-scrolling flex flex-col-reverse'
         )}
       >
         {metadata.works.map((work) => {
           return (
-            <div key={work.title} className="flex flex-col gap-1">
+            <div key={work.title}>
               <SocialLink
                 href={work.href}
                 isTarget={true}
                 className="relative z-40"
               >
-                <p className="italic md:text-7xl font-Cardo">{work.title}</p>
+                <p className="italic text-2xl md:text-7xl font-Cardo">{work.title}</p>
               </SocialLink>
               {/* <div */}
               {/*   className={cx( */}

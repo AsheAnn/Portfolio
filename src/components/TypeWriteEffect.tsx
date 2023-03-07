@@ -63,8 +63,8 @@ const TypeWriteEffect: React.FC<TypeWriteEffectProps> = ({
       ) : (
         <div
           className={cx(
-            isShow ? 'h-14 md:h-10' : 'text-opacity-0 h-0 text-[9px]',
-            'transition-all duration-300 ease-in-out inline-flex gap-3 items-center w-full tracking-[0.08rem]'
+            isShow ? 'h-14 lg:h-10' : 'text-opacity-0 h-0',
+            'transition-all duration-300 ease-in-out inline-flex gap-3 items-center w-full tracking-[0.3rem]'
           )}
         >
           <div>

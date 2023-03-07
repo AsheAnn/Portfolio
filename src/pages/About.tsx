@@ -35,7 +35,7 @@ const TypeWriteSentence: React.FC<{
   return (
     <div
       className={cx(
-        'grid w-full h-full text-xs md:text-sm md:leading-9 transition-all duration-150 ease-in-out',
+        'grid w-full h-full text-xs lg:text-sm lg:leading-9 transition-all duration-150 ease-in-out',
         gridMapper[sentenceId.toString()]
       )}
     >
@@ -67,7 +67,7 @@ const About = () => {
             'pb-2 md:pb-0 duration-[1200ms] delay-75 ease-in-out tracking-wider w-full h-full flex items-end'
           )}
         >
-          <div className="w-[81%]">
+          <div className="w-full md:w-[81%]">
             <TypeWriteSentence isMounted={isMounted} data={metadata.intro} />
             <div
               className={cx(

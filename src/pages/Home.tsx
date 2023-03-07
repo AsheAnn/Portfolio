@@ -11,7 +11,7 @@ const Home = () => {
         <div
           className={cx(
             isDiffPath ? '' : 'opacity-0',
-            'duration-[1200ms] delay-75 ease-in-out text-sm md:text-xl tracking-wider'
+            'duration-[1200ms] delay-75 ease-in-out text-xs md:text-xl tracking-wider'
           )}
         >
         
