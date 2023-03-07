@@ -14,7 +14,6 @@ const Home = () => {
             'duration-[1200ms] delay-75 ease-in-out text-xs md:text-xl tracking-wider'
           )}
         >
-        
           <div className="inline-flex justify-between w-full">
             <p className="font-NotoSans font-light">Sense and Sensibility</p>
             <p> © 2023</p>

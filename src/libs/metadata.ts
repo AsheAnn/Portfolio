@@ -5,10 +5,30 @@ const routerLink = [
 ]
 
 const works = [
-  { title: "WeiBird's Virtual Concert", role: '', href: '', year: '2020' },
-  { title: 'AUO Trailer', role: '', href: '', year: '2021' },
-  { title: 'Absurd Arboretum', role: 'Shader / 3D Model / Comp / VFX', href: 'https://ab-ar.art/', year: '2021' },
-  { title: 'Wasted Wild', role: '3D Model / 3D Animator / Comp / VFX', href: 'https://www.wastedwild.life/', year: '2022' },
+  {
+    title: "WeiBird's Virtual Concert",
+    role: '3D Model / Shader / 3D Animation / Comp / VFX',
+    href: '/',
+    year: '2020'
+  },
+  {
+    title: 'AUO Trailer',
+    role: 'Motion Design / 3D Model / 3D Animation / Comp',
+    href: '/',
+    year: '2021'
+  },
+  {
+    title: 'Absurd Arboretum',
+    role: 'Design / 3D Animation / 3D Model / Comp / VFX',
+    href: 'https://ab-ar.art/',
+    year: '2021'
+  },
+  {
+    title: 'Wasted Wild',
+    role: 'Design / 3D Model / Shader / Comp / VFX',
+    href: 'https://www.wastedwild.life/',
+    year: '2022'
+  }
 ]
 
 const intro = [

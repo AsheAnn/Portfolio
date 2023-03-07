@@ -2,7 +2,8 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div className="relative z-40">
+    </div>
   )
 }
 
