@@ -8,13 +8,13 @@ const works = [
   {
     title: "WeiBird's Virtual Concert",
     role: '3D Model / Shader / 3D Animation / Comp / VFX',
-    href: '/',
+    href: 'https://youtu.be/uoQbRXYvN0U',
     year: '2020'
   },
   {
     title: 'AUO Trailer',
     role: 'Motion Design / 3D Model / 3D Animation / Comp',
-    href: '/',
+    href: 'https://youtu.be/6kkEAaT5pn0',
     year: '2021'
   },
   {
