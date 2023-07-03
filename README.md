@@ -1,5 +1,7 @@
 # Portfolio
 
+- Personal Portfolio
+
 - Vite 
 - React 
 - TailwindCSS 
