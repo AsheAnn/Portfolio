@@ -9,7 +9,7 @@ const DefaultLayout = () => {
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 
   return (
-    <div className="relative w-full h-full bg-gray-50 transition-colors duration-300 ease-linear dark:text-gray-200 text-theme-100 dark:bg-theme-100">
+    <div className="relative w-full h-full min-h-screen bg-gray-50 transition-colors duration-300 ease-linear dark:text-gray-200 text-theme-100 dark:bg-theme-100">
       <IntroAnimaton />
       <Background />
       <div className="relative w-full h-full z-[1]">
