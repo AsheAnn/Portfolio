@@ -1,7 +1,8 @@
 const routerLink = [
   { title: 'Home', href: '/' },
   { title: 'About', href: '/about' },
-  { title: 'Works', href: '/works' }
+  { title: 'Works', href: '/works' },
+  { title: 'Blog', href: 'https://blog.asheann.com' },
 ]
 
 const works = [
