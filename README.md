@@ -2,8 +2,12 @@
 
 - Personal Portfolio
 
-- Vite 
-- React 
-- TailwindCSS 
+
+## Technologies
 - Yarn
+- Vite 
+- TypeScript
+- React
+- React Router
+- TailwindCSS + SCSS 
 - GLSL

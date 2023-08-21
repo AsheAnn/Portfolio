@@ -2,7 +2,7 @@ const routerLink = [
   { title: 'Home', href: '/' },
   { title: 'About', href: '/about' },
   { title: 'Works', href: '/works' },
-  { title: 'Blog', href: 'https://blog.asheann.com' },
+  { title: 'Blog', href: 'https://blog.asheann.com' }
 ]
 
 const works = [
@@ -21,13 +21,13 @@ const works = [
   {
     title: 'Absurd Arboretum',
     role: 'Design / 3D Animation / 3D Model / Comp / VFX',
-    href: 'https://ab-ar.art/',
+    href: 'https://opensea.io/collection/absurdarboretum',
     year: '2021'
   },
   {
     title: 'Wasted Wild',
     role: 'Design / 3D Model / Shader / Comp / VFX',
-    href: 'https://www.wastedwild.life/',
+    href: 'https://opensea.io/collection/wastedwild',
     year: '2022'
   }
 ]

@@ -1,7 +1,7 @@
 const socialMediaLink = [
   {
     name: 'twitter',
-    href: 'https://twitter.com/_asheannart',
+    href: 'https://twitter.com/_asheann_',
     icon: 'i-fa6-brands-twitter hover:text-sky-400'
   },
   {
