@@ -4,6 +4,7 @@ import { clsx as cx } from 'clsx'
 
 const Home = () => {
   const { isDiffPath } = useMounted()
+  const currentYear = new Date().getFullYear().toString();
 
   return (
     <section className="relative w-2/3 md:w-full h-full max-w-lg">
@@ -16,7 +17,7 @@ const Home = () => {
         >
           <div className="inline-flex justify-between w-full">
             <p className="font-NotoSans font-light">Sense and Sensibility</p>
-            <p> © 2023</p>
+            <p> © {currentYear}</p>
           </div>
           <div
             className={cx(
